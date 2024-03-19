@@ -86,7 +86,7 @@ document.write(`a.Counting: `)
 for (let i = 1; i <= 15; i++) {
     // counting.push(i);
     console.log(i);
-    document.write(i+`,`);
+    document.write(i + `,`);
 }
 
 document.write(`</br>`);
@@ -94,29 +94,59 @@ document.write(`b.Reverse Counting: `);
 for (let i = 10; i >= 1; i--) {
     // counting.push(i);
     console.log(i);
-    document.write(i+`,`);
+    document.write(i + `,`);
 }
 document.write(`</br>`);
 
 document.write(`c.Even: `);
 for (let i = 1; i <= 10; i++) {
     console.log(i);
-    document.write(i*2+`,`);
+    document.write(i * 2 + `,`);
 }
 document.write(`</br>`);
 
 document.write(`d.Odd: `);
 for (let i = 0; i <= 10; i++) {
-console.log(i);  
-document.write(i*2+1+`,`)  
+    console.log(i);
+    document.write(i * 2 + 1 + `,`)
 }
 
 document.write(`</br>`);
 
 document.write(`e.Series: `);
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+    document.write(i * 2 + `k` + `,`)
+}
 
 
 
+// 8. You have an array.
+// A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+//Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not. Example:
+
+document.write(`</br>`)
+
+let material = prompt(`enter product name`)
+let sweet = [`cake`, `apple pie`, `cookie`, `chips`, `patties`];
 
 
+for (let i = 1; i <= 1; i++) {
+
+    if (sweet.includes (sweet[i])) {
+        console.log('Item Available');
+        document.write(`${material} are available`);
+    } else {
+        console.log(`item not available`);
+        document.write(`${material} are not available`);
+    }
+}
+// let N = prompt("Enter the number of items:");
+// let array = [];
+// for (let i = 0; i < N; i++) {
+// let item = prompt("Enter item " + (i+1) + ":");
+// array.push(item);
+// document.write(array[i],`</br>`)
+// }
+// console.log(array);
 
