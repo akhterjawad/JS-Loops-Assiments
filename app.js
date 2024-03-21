@@ -127,26 +127,55 @@ for (let i = 1; i <= 10; i++) {
 
 document.write(`</br>`)
 
-let material = prompt(`enter product name`)
-let sweet = [`cake`, `apple pie`, `cookie`, `chips`, `patties`];
+// let material = prompt(`enter product name`)
+// let sweet = [`cake`, `apple pie`, `cookie`, `chips`, `patties`];
 
 
-for (let i = 1; i <= 1; i++) {
+// for (let i = 1; i <= 1; i++) {
 
-    if (sweet.includes (sweet[i])) {
-        console.log('Item Available');
-        document.write(`${material} are available`);
-    } else {
-        console.log(`item not available`);
-        document.write(`${material} are not available`);
-    }
-}
-// let N = prompt("Enter the number of items:");
-// let array = [];
-// for (let i = 0; i < N; i++) {
-// let item = prompt("Enter item " + (i+1) + ":");
-// array.push(item);
-// document.write(array[i],`</br>`)
+//     if (material!=sweet,i) {
+//         console.log('Item Available');
+//         document.write(`${material} are available`);
+//     } else {
+//         console.log(`item not available`);
+//         document.write(`${material} are not available`);
+//     }
 // }
-// console.log(array);
 
+
+// 11. Write a program to identify the largest & the smallest number in the given array.
+
+
+
+
+let B = [90,67,109,672,787,1000,653];
+let largestNumber = Math.max(...B)
+
+document.write("THE LARGEST NUMBER OF ARRAY IS" +largestNumber)
+// done
+
+
+
+
+
+
+// // let b = [24, 53, 78, 91, 12]
+// let B = [24, 53, 78, 91, 12];
+
+// // Initialize variables to store the largest and smallest numbers
+// let largest = B[0];
+// let smallest = B[0];
+
+// // Loop through the array to find the largest and smallest numbers
+// for (let i = 1; i < B.length; i++) {
+//     if (B[i] > largest) {
+//         largest = B[i];
+//     }
+//     else {
+//         smallest = B[i];
+//     }
+// }
+
+// // Print the results
+// console.log("The largest number is: " + largest);
+// console.log("The smallest number is: " + smallest);
