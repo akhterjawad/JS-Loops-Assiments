@@ -1,19 +1,19 @@
 //1. Write a program to display the message “Hello World” 5 times in your browser using for loop.
 
 
-for (let i = 0; i <= 5; i++) {
-    console.log(`hellow world`, [i]);
+// for (let i = 0; i <= 5; i++) {
+//     console.log(`hellow world`, [i]);
 
-}
+// }
 
 
 //2. Write a program to print numeric counting from 1 to 10.
 
 
-for (let i = 1; i <= 10; i++) {
-    console.log(i, [i]);
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i, [i]);
 
-}
+// }
 
 //3. Write a program to print multiplication table of any number using for loop. Table number & length should be taken as an input from user.
 
@@ -141,22 +141,22 @@ document.write(`</br>`)
 //     }
 
 //9. Write a program to identify the largest number in the given array.
-let A = [24, 53, 78, 91, 12]
-document.write(A)
-A.sort((a,b)=>{
-return b-a
-})
-document.write(`</br>`,`the largers number of the aray is `,A[0])
+// let A = [24, 53, 78, 91, 12]
+// document.write(A)
+// A.sort((a,b)=>{
+// return b-a
+// })
+// document.write(`</br>`,`the largers number of the aray is `,A[0])
 
 
 
  //10. Write a program to identify the smallest number in the given array.
- let b = [24, 53, 78, 91, 12]
-document.write(`</br>`,b)
- b.sort((a,b)=>{
-    return a-b
- } )
- document.write(`</br>`,`the smallest number of the aray is `,b[0],`</br>`)
+//  let b = [24, 53, 78, 91, 12]
+// document.write(`</br>`,b)
+//  b.sort((a,b)=>{
+//     return a-b
+//  } )
+//  document.write(`</br>`,`the smallest number of the aray is `,b[0],`</br>`)
 
 
 
@@ -177,36 +177,82 @@ document.write(`</br>`,b)
 
 //12. Write a program to print multiples of 5 ranging 1 to 100
 
-let c = [5]
-for (let i = 1; i <= 20; i++) {
-    document.write(c*i+`,`);
-} 
+// let c = [5]
+// for (let i = 1; i <= 20; i++) {
+//     document.write(c*i+`,`);
+// } 
 
 
-//13. You have given the following arrays:   Write a program to generate the following HTML table in your browser using JS.
-var students = ["Ali", "Sami", "Taha", "Inam"];
-var scores = [58, 73, 89, 90];
+// //13. You have given the following arrays:   Write a program to generate the following HTML table in your browser using JS.
+// var students = ["Ali", "Sami", "Taha", "Inam"];
+// var scores = [58, 73, 89, 90];
 
-document.write(`<table>
-<tr>
-    <td>Student</td>
-    <td>Scores</td>
-</tr>
-<tr>
-    <td>${students[0]}</td>
-    <td>${scores[0]}</td>
-</tr>
-<tr>
-    <td>${students[1]}</td>
-    <td>${scores[1]}</td>
-</tr>
-<tr>
-    <td>${students[2]}</td>
-    <td>${scores[2]}</td>
-</tr>
-<tr>
-    <td>${students[3]}</td>
-    <td>${scores[3]}</td>
-</tr>
-</table>`)
-document.write(`</br>`)
+// document.write(`<table>
+// <tr>
+//     <td>Student</td>
+//     <td>Scores</td>
+// </tr>
+// <tr>
+//     <td>${students[0]}</td>
+//     <td>${scores[0]}</td>
+// </tr>
+// <tr>
+//     <td>${students[1]}</td>
+//     <td>${scores[1]}</td>
+// </tr>
+// <tr>
+//     <td>${students[2]}</td>
+//     <td>${scores[2]}</td>
+// </tr>
+// <tr>
+//     <td>${students[3]}</td>
+//     <td>${scores[3]}</td>
+// </tr>
+// </table>`)
+// document.write(`</br>`)
+
+
+
+// 14. Write a program that prints number from start of the array to desired stop value. Given array:
+// var scores = [12, 45, 3, 22, 34, 50];
+// (Hint: take stop value from user)
+// E.g. if user gives 3 as input value print 12, 45, 3 if user gives 34 as input value print 12, 45, 3, 22, 
+
+
+// let scores = [12, 45, 3, 22, 34, 50];
+// let scoresNumber = prompt(`enter any number`)
+// for (let i = 0; i <= scoresNumber -1; i++) {
+//     document.write(scores[i]+`,`)    
+// }
+
+
+
+// 15. You have an array
+//A = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+//Write each element on new line with the help of nested for loops.
+
+
+let nested = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+
+for (let i = 0; i < nested.length; i++) {
+document.write(nested[i],`</br>`)    
+}
+
+// 16. Write a program to repeatedly print the value of the variable num which is input by user. Value should be decreasing by 0.5 each time, as long as x Value remains positive.
+
+// let enternum = +prompt(`enter yournumber`)
+// for (let i = 0; i <= enternum-0.5 ; i++) {
+// document.write(i-0.5,`,`)    
+// }
+// document.write(enternum)
+
+
+
+for (let i = 0; i <= 10; i++) {
+    console.log('even number  ===> ' , i*2);
+    for(let j = i; j <= i; j++){
+        console.log('odd number===>' , +2+j+i-1);
+    }
+}
+
+
