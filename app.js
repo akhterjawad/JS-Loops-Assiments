@@ -32,11 +32,11 @@ for (let i = 1; i <= 10; i++) {
 //Write each element on new line with the help of for loop.
 
 
-let A = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
+// let A = ["Nokia", "Samsung", "Apple", "Sony", "Huawei"];
 
-for (let i = 0; i < A.length; i++) {
-    console.log(A[i]);
-}
+// for (let i = 0; i < A.length; i++) {
+//     console.log(A[i]);
+// }
 
 
 
@@ -45,15 +45,15 @@ for (let i = 0; i < A.length; i++) {
 
 
 
-var fruits = [`apple`, `banana`, `mango`, `orange`, `strawberry`]
+// var fruits = [`apple`, `banana`, `mango`, `orange`, `strawberry`]
 
-let ul = document.querySelector('ul')
-for (let i = 0; i < fruits.length; i++) {
-    console.log(i, fruits[i]);
-    document.write(fruits[i], `</br>`)
-    ul.innerHTML += `<li> Element at index ${i} is ${fruits[i]}</li>`
-    // ul.innerHTML =`<li> jawad${fruits[0]}<li>`
-}
+// let ul = document.querySelector('ul')
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(i, fruits[i]);
+//     document.write(fruits[i], `</br>`)
+//     ul.innerHTML += `<li> Element at index ${i} is ${fruits[i]}</li>`
+//     // ul.innerHTML =`<li> jawad${fruits[0]}<li>`
+// }
 
 
 //6. Write a program to initialize an array of N items by using prompt. Where N is number of items as entered by the user.
@@ -61,7 +61,7 @@ for (let i = 0; i < fruits.length; i++) {
 
 // let N = prompt("Enter the number of items:");
 // let array = [];
-// for (let i = 0; i <br N; i++) {
+// for (let i = 0; i < N; i++) {
 // let item = prompt("Enter item " + (i+1) + ":");
 // array.push(item);
 // document.write(array[i],`</br>`)
@@ -82,42 +82,42 @@ for (let i = 0; i < fruits.length; i++) {
 document.write(`</br> `)
 
 // let counting = []
-document.write(`a.Counting: `)
-for (let i = 1; i <= 15; i++) {
-    // counting.push(i);
-    console.log(i);
-    document.write(i + `,`);
-}
+// document.write(`a.Counting: `)
+// for (let i = 1; i <= 15; i++) {
+//     // counting.push(i);
+//     console.log(i);
+//     document.write(i + `,`);
+// }
 
-document.write(`</br>`);
-document.write(`b.Reverse Counting: `);
-for (let i = 10; i >= 1; i--) {
-    // counting.push(i);
-    console.log(i);
-    document.write(i + `,`);
-}
-document.write(`</br>`);
+// document.write(`</br>`);
+// document.write(`b.Reverse Counting: `);
+// for (let i = 10; i >= 1; i--) {
+//     // counting.push(i);
+//     console.log(i);
+//     document.write(i + `,`);
+// }
+// document.write(`</br>`);
 
-document.write(`c.Even: `);
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
-    document.write(i * 2 + `,`);
-}
-document.write(`</br>`);
+// document.write(`c.Even: `);
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//     document.write(i * 2 + `,`);
+// }
+// document.write(`</br>`);
 
-document.write(`d.Odd: `);
-for (let i = 0; i <= 10; i++) {
-    console.log(i);
-    document.write(i * 2 + 1 + `,`)
-}
+// document.write(`d.Odd: `);
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+//     document.write(i * 2 + 1 + `,`)
+// }
 
-document.write(`</br>`);
+// document.write(`</br>`);
 
-document.write(`e.Series: `);
-for (let i = 1; i <= 10; i++) {
-    console.log(i);
-    document.write(i * 2 + `k` + `,`)
-}
+// document.write(`e.Series: `);
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+//     document.write(i * 2 + `k` + `,`)
+// }
 
 
 
@@ -127,20 +127,37 @@ for (let i = 1; i <= 10; i++) {
 
 document.write(`</br>`)
 
-// let material = prompt(`enter product name`)
-// let sweet = [`cake`, `apple pie`, `cookie`, `chips`, `patties`];
-
-
-// for (let i = 1; i <= 1; i++) {
-
-//     if (material!=sweet,i) {
-//         console.log('Item Available');
-//         document.write(`${material} are available`);
-//     } else {
-//         console.log(`item not available`);
-//         document.write(`${material} are not available`);
-//     }
+// let emtyArray = [`cake`, `apple pie`, `cookie`, `chips`, `patties`]
+// let item = prompt(`enter your item`)
+// let myfunc = indexNumber =>{
+//     return indexNumber === item
 // }
+// let value = emtyArray.findIndex(myfunc)
+// console.log(value);
+//     if (emtyArray.includes(item)) {
+//         document.write(`${item} are availale at index ${value}`)
+//     } else {
+//         document.write(`${item} not available`)
+//     }
+
+//9. Write a program to identify the largest number in the given array.
+let A = [24, 53, 78, 91, 12]
+document.write(A)
+A.sort((a,b)=>{
+return b-a
+})
+document.write(`</br>`,`the largers number of the aray is `,A[0])
+
+
+
+ //10. Write a program to identify the smallest number in the given array.
+ let b = [24, 53, 78, 91, 12]
+document.write(`</br>`,b)
+ b.sort((a,b)=>{
+    return a-b
+ } )
+ document.write(`</br>`,`the smallest number of the aray is `,b[0],`</br>`)
+
 
 
 // 11. Write a program to identify the largest & the smallest number in the given array.
@@ -148,34 +165,48 @@ document.write(`</br>`)
 
 
 
-let B = [90,67,109,672,787,1000,653];
-let largestNumber = Math.max(...B)
+// let B = [90,67,109,672,787,1000,653];
+// let largestNumber = Math.max(...B)
+// document.write("THE LARGEST NUMBER OF ARRAY IS " +largestNumber,`</br>`)
 
-document.write("THE LARGEST NUMBER OF ARRAY IS" +largestNumber)
-// done
+// let smallesttNumber = Math.min(...B)
+
+// document.write("THE SMALLEST NUMBER OF ARRAY IS " +smallesttNumber)
+// // done
 
 
+//12. Write a program to print multiples of 5 ranging 1 to 100
+
+let c = [5]
+for (let i = 1; i <= 20; i++) {
+    document.write(c*i+`,`);
+} 
 
 
+//13. You have given the following arrays:   Write a program to generate the following HTML table in your browser using JS.
+var students = ["Ali", "Sami", "Taha", "Inam"];
+var scores = [58, 73, 89, 90];
 
-
-// // let b = [24, 53, 78, 91, 12]
-// let B = [24, 53, 78, 91, 12];
-
-// // Initialize variables to store the largest and smallest numbers
-// let largest = B[0];
-// let smallest = B[0];
-
-// // Loop through the array to find the largest and smallest numbers
-// for (let i = 1; i < B.length; i++) {
-//     if (B[i] > largest) {
-//         largest = B[i];
-//     }
-//     else {
-//         smallest = B[i];
-//     }
-// }
-
-// // Print the results
-// console.log("The largest number is: " + largest);
-// console.log("The smallest number is: " + smallest);
+document.write(`<table>
+<tr>
+    <td>Student</td>
+    <td>Scores</td>
+</tr>
+<tr>
+    <td>${students[0]}</td>
+    <td>${scores[0]}</td>
+</tr>
+<tr>
+    <td>${students[1]}</td>
+    <td>${scores[1]}</td>
+</tr>
+<tr>
+    <td>${students[2]}</td>
+    <td>${scores[2]}</td>
+</tr>
+<tr>
+    <td>${students[3]}</td>
+    <td>${scores[3]}</td>
+</tr>
+</table>`)
+document.write(`</br>`)
