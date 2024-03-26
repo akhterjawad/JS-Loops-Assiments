@@ -241,8 +241,8 @@ document.write(nested[i],`</br>`)
 // 16. Write a program to repeatedly print the value of the variable num which is input by user. Value should be decreasing by 0.5 each time, as long as x Value remains positive.
 
 // let enternum = +prompt(`enter yournumber`)
-// for (let i = 0; i <= enternum-0.5 ; i++) {
-// document.write(i-0.5,`,`)    
+// for (let i = 0; i <= enternum-0.5 ; i+=0.5) {
+// document.write(i,`,`)    
 // }
 // document.write(enternum)
 
@@ -251,8 +251,31 @@ document.write(nested[i],`</br>`)
 for (let i = 0; i <= 10; i++) {
     console.log('even number  ===> ' , i*2);
     for(let j = i; j <= i; j++){
-        console.log('odd number===>' , +2+j+i-1);
+        console.log('odd number===>' , +1+j+i);
     }
 }
+
+// 18. Write a program to calculate the product of the odd integers from 1 to 7.
+
+
+// let firstoddvalue = +prompt(`enter your first odd value`)
+// let lastoddvalue = +prompt(`enter your last odd value`)
+
+// for (let i = firstoddvalue; i <= lastoddvalue; i++) {
+// console.log (firstoddvalue*2*lastoddvalue*firstoddvalue);    
+// }
+
+
+// Initialize the variable to store the product
+let product = 1;
+
+// Loop through odd integers from 1 to 7
+for (let i = 1; i <= 7; i += 2) {
+    // Multiply the current odd integer to the product
+    product *= i;
+}
+
+// Print the result
+console.log("The product of the odd integers from 1 to 7 is:", product);
 
 
